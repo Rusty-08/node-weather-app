@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    </head>
+    <body>
+        <section id="main-body">
+
+            <div class="header">
+                <h2>Weather App</h2>
+            </div>
+            <div class="main-content">        
+                <article class="widget">
+                    <div class="weatherLocation">
+                        <form class="form">
+                            <input type="text" placeholder="Search the Location..." class="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="weatherIcon"><i class="fa-solid fa-cloud-meatball"></i></div>
+                    <div class="detail">
+                        <div class="weatherInfo">
+                            <div class="temperature"><span></span></div>
+                            <div class="description">    
+                                <div class="weatherCondition"></div>    
+                                <div class="place"></div>
+                            </div>
+                        </div>
+                        <div class="date"></div>
+                    </div>
+                </article>       
+            </div>
+            <div class="bottom"></div>
+        </section>
+        <script src="js/app.js"></script>
+    </body>
+</html>
