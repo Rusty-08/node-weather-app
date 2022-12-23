@@ -47,7 +47,7 @@ weatherForm.addEventListener('submit', (event) => {
                 }else if(data.description === "snow"){
                     weatherIcon.className = "fa-solid fa-snowflake"
                 }else if(data.description === "mist"){
-                    weatherIcon.className = "fa-solid fa-mist"
+                    weatherIcon.className = "fa-solid fa-smog"
                 }else if(data.description === "overcast clouds"){
                     weatherIcon.className = "fa-solid fa-cloud"
                 }
