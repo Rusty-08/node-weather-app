@@ -64,37 +64,48 @@ h2 {
 .form {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   margin-top: 2em;
 }
 .search {
   position: absolute;
-  width: 30%;
-  height: 3em;
+  width: 40%;
+  height: 7%;
+  font-size: 1.2vw;
   font-weight: 400;
-  color: #4a0006;
   padding-left: 1em;
   border-radius: 0.5em;
   border-width: 3px;
 	border-style: solid;
+  text-decoration: none;
 	border-color: #ffc8cd;
   box-shadow: rgba(223, 223, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
 }
 button {
-  width: 3em;
-  height: 2.5em;
-  margin: 0.25em;
+  width: 4%;
+  font-size: 1.3vw;
+  height: calc(7% - 5px);
   border: none;
+  color: #ffffff;
+  right: calc(30% + 3px);
   background-color: transparent;
   background-color: rgb(188, 216, 250);
-  border-radius: 0em 0.25em 0.25em 0em;
-  position: relative;
+  border-radius: 0em 0.3em 0.3em 0em;
+  position: absolute;
   cursor: pointer;
-  margin-left: 45%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  transition: all 0.175s ease-in-out;
+}
+button:hover {
+  background-color: rgb(146, 195, 255);
+}
+button:hover i {
+  color: #4e0000;
+  transition: all 0.175s ease-in-out;
 }
 .weatherIcon {
-  font-size: 10em;
+  font-size: 14vw;
   color: #fff;
   display: flex;
   align-items: center;
@@ -104,7 +115,7 @@ button {
   margin-top: 5%;
   animation: glow 2s ease-in-out infinite alternate;
 }
-@-webkit-keyframes glow {
+@keyframes glow {
   from {
     text-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #6ad7ff, 0 0 5px #6ad7ff, 0 0 6px #6ad7ff, 0 0 7px #6ad7ff, 0 0 8px #6ad7ff;
   }
@@ -123,7 +134,7 @@ button {
   margin-top: 6%;
 }
 .date {
-  font-size: 2em; 
+  font-size: 2vw; 
   width: 20%;
   display: flex;
   align-items: center;
@@ -162,18 +173,19 @@ button {
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  font-size: 2em;
+  font-size: 2vw;
   border-radius: 10px 0px 0px 10px;
   background-color: rgb(156, 210, 255);
   height: 80%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .weatherCondition {
-  font-size: 1.5em;
+  font-size: 2vw;
   font-weight: 300;
 }
 .place {
-  font-size: 1.5em;
+  font-size: 1.7vw;
+  text-align: center;
 }
 .bottom {
   width: 60%;

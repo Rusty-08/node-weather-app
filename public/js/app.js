@@ -40,7 +40,7 @@ weatherForm.addEventListener('submit', (event) => {
                     weatherIcon.className = "fa-solid fa-smog"
                 }else if(data.description === "shower rain"){
                     weatherIcon.className = "fa-solid fa-cloud-showers-heavy"
-                }else if(data.description === "rain"){
+                }else if(data.description === "light rain"){
                     weatherIcon.className = "fa-solid fa-cloud-sun-rain"
                 }else if(data.description === "thunderstorm"){
                     weatherIcon.className = "fa-solid fa-cloud-bolt"

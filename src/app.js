@@ -17,7 +17,6 @@ app.get('', (req, res) => {
         title: 'Node Weather App',
     })
 })
-
 app.get('/weather', (req, res) => {
     const address = req.query.address
     if(!address) {
