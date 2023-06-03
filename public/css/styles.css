@@ -65,9 +65,9 @@ h2 {
   flex-direction: row;
 }
 .search {
-  width: 50%;
+  width: 70%;
   height: 50%;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 400;
   padding-left: 1em;
   border-radius: 0.5em 0em 0em 0.5em;
@@ -198,4 +198,77 @@ button:hover i {
   border-color: #BCE6F7;
   border-radius: 0px 0px 50px 50px;
   height: 2em;
+}
+@media screen and (max-width: 500px) {
+  .header {
+    font-size: 2rem;
+  }
+  .main-content {
+    height: 60%;
+  }
+  .search {
+    font-size: 1.5rem;
+  }
+  button {
+    width: 6rem;
+  }
+  .weatherIcon {
+    font-size: 27rem;
+  }
+  .detail {
+    margin-top: 8rem;
+  }
+  .description {
+    height: 60%;
+  }
+  .date, .temperature {
+    height: 50%;
+  }
+  .bottom {
+    height:5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header {
+    width: 80%;
+  }
+  .main-content {
+    width: 80%;
+  }
+  .bottom {
+    width: 80%;
+  }
+  .form {
+    align-items: center;
+  }
+  .search {
+    width: 70%;
+    height: 40%;
+    font-size: 1.2rem;
+  }
+  button {
+    height: 40%;
+    width: 4rem;
+    font-size: 1.5rem;
+  }
+  .weatherIcon {
+    font-size: 25rem;
+    margin-top: 5rem;
+  }
+  .detail {
+    margin-top: 5rem;
+  }
+  .description {
+    height: 80%;
+  }
+  .weatherCondition {
+    font-size: 1.5rem;
+  }
+  .place {
+    font-size: 1.5rem;
+  }
+  .date, .temperature {
+    height: 60%;
+    font-size: 1.5rem;
+  }
 }
