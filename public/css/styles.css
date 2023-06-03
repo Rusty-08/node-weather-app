@@ -11,7 +11,7 @@ body {
   height: 100vh;
 }
 #main-body {
-  background-image: linear-gradient(to right, #8360c3, #2ebf91);
+  background-color: #00244A;
   width: 100%;
   display: flex;
   height: 100%;
@@ -20,33 +20,27 @@ body {
   flex-direction: column;
 }
 .header {
-  font-size: 2em;
+  font-size: 1.5em;
   padding-top: 5px;
   padding-bottom: 5px;
   width: 60%;
-  background-image: linear-gradient(0deg, #0f0c29, #302b63, #24243e);
+  border: solid 1px #BCE6F7;
   border-radius: 50px 50px 0px 0px;
 }
 h2 {
-  background: linear-gradient(180deg, #FF0000 0%, rgba(62, 62, 62, 0.74) 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
+  color: #BCE6F7;
   text-align: center;
-  font-weight: 500;
+  font-weight: 300;
 }
 .main-content {
   display: flex;
   align-items: center;
   flex-direction: column;
   height: 70%;
-  width: 60%;
-  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  border-width: 5px;
+  width: 60%;;
+  border-width: 0px 1px;
   border-style: solid;
-  border-image: 
-  linear-gradient(to bottom,rgb(133, 0, 0),rgba(0, 0, 0, 0)) 1 100%;
-
+  border-color: #BCE6F7;
 }
 .widget {
   display: flex;
@@ -64,37 +58,44 @@ h2 {
 .form {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
+  height: 100%;
   margin-top: 2em;
+  flex-direction: row;
 }
 .search {
-  position: absolute;
-  width: 40%;
-  height: 7%;
-  font-size: 1.2vw;
+  width: 50%;
+  height: 50%;
+  font-size: 0.8rem;
   font-weight: 400;
   padding-left: 1em;
-  border-radius: 0.5em;
-  border-width: 3px;
+  border-radius: 0.5em 0em 0em 0.5em;
+  border-width: 1px 0px 1px 1px;
 	border-style: solid;
+  color: #BCE6F7;
   text-decoration: none;
-	border-color: #ffc8cd;
+  background-color: transparent;
+  outline: 0;
+	border-color: #BCE6F7;
   box-shadow: rgba(223, 223, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
 }
+.search::placeholder {
+  color: #BCE6F7;
+  opacity: 0.7;
+}
 button {
-  width: 4%;
-  font-size: 1.3vw;
-  height: calc(7% - 5px);
+  width: 3rem;
+  height: 50%;
+  font-size: 1rem;
   border: none;
-  color: #ffffff;
-  right: calc(30% + 3px);
+  color: #BCE6F7;
   background-color: transparent;
-  background-color: rgb(188, 216, 250);
-  border-radius: 0em 0.3em 0.3em 0em;
-  position: absolute;
+  border-radius: 0em 0.5em 0.5em 0em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #BCE6F7;
   cursor: pointer;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   transition: all 0.175s ease-in-out;
 }
 button:hover {
@@ -117,11 +118,11 @@ button:hover i {
 }
 @keyframes glow {
   from {
-    text-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #6ad7ff, 0 0 5px #6ad7ff, 0 0 6px #6ad7ff, 0 0 7px #6ad7ff, 0 0 8px #6ad7ff;
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #6ad7ff, 0 0 3px #6ad7ff, 0 0 3px #6ad7ff, 0 0 4px #6ad7ff, 0 0 4px #6ad7ff;
   }
   
   to {
-    text-shadow: 0 0 2px #fff, 0 0 3px #ffacf9, 0 0 4px #ffacf9, 0 0 5px #ffacf9, 0 0 6px #ffacf9, 0 0 7px #ffacf9, 0 0 8px #ffacf9;
+    text-shadow: 0 0 1px #fff, 0 0 2px #ffacf9, 0 0 3px #ffacf9, 0 0 3px #ffacf9, 0 0 3px #ffacf9, 0 0 4px #ffacf9, 0 0 4px #ffacf9;
   }
 }
 .detail {
@@ -140,8 +141,9 @@ button:hover i {
   align-items: center;
   justify-content: center;
   border-radius: 0px 10px 10px 0px;
-  background-color: rgb(156, 210, 255);
+  background-color: #BCE6F7;
   height: 80%;
+  color: #00244A;
   position: relative;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
@@ -164,7 +166,8 @@ button:hover i {
   width: 66.67%;
   height: 100%;
   border-radius: 5px;
-  background-color: rgb(206, 233, 255);
+  background-color: #BCE6F7;
+  color: #00244A;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .temperature {
@@ -174,8 +177,9 @@ button:hover i {
   justify-content: center;
   font-weight: 400;
   font-size: 2vw;
+  color: #00244A;
   border-radius: 10px 0px 0px 10px;
-  background-color: rgb(156, 210, 255);
+  background-color: #BCE6F7;
   height: 80%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
@@ -189,7 +193,9 @@ button:hover i {
 }
 .bottom {
   width: 60%;
-  background-image: linear-gradient(0deg, #0f0c29, #302b63, #24243e);
+  border-width: 1px;
+  border-style: solid;
+  border-color: #BCE6F7;
   border-radius: 0px 0px 50px 50px;
   height: 2em;
 }
